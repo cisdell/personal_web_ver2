@@ -5,8 +5,14 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "../public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+//come back and add more types later
 
-export const links = [
+type LinkType = {
+  name: string;
+  hash: string;
+}
+
+export const links: LinkType[] = [
   {
     name: "Home",
     hash: "#home",
