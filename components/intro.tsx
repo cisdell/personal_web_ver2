@@ -73,10 +73,18 @@ export default function Intro() {
           Download CV
           <HiDownload className="opacity-70 group-hover:translate-y-2 " />
         </a>
-        <a className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full">
+        <a
+          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] cursor-pointer transition border border-black/10"
+          href="https://www.linkedin.com/in/andrewicho1/"
+          target="_blank"
+        >
           <BsLinkedin />
         </a>
-        <a className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem]">
+        <a
+          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] active:scale-105 cursor-pointer transition border border-black/10"
+          href="https://www.github.com/cisdell/"
+          target="_blank"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>
