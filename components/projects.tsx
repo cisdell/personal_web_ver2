@@ -20,5 +20,10 @@ export default function Projects() {
 type ProjectProps = (typeof projectsData)[number];
 
 function Project({ title, description, tags, imageUrl }: ProjectProps) {
-  return <div>{title}</div>;
+  return (
+    <section>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </section>
+  );
 }
