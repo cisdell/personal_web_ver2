@@ -5,6 +5,7 @@ export default function Projects() {
   return (
     <section>
       <SectionHeading title={"My Projects"} />
+      <div></div>
     </section>
   );
 }
