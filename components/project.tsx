@@ -6,7 +6,12 @@ import { useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 
-function Project({ title, description, tags, imageUrl }: ProjectProps) {
+export default function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+}: ProjectProps) {
   const ref = useRef(null);
   useScroll({
     target: "",

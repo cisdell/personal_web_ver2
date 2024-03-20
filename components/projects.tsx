@@ -4,6 +4,7 @@ import SectionHeading from "./section-heading";
 import Image from "next/image";
 import { useScroll } from "framer-motion";
 import Project from "./project.tsx";
+import { projectsData } from "@/lib/data";
 
 export default function Projects() {
   // console.log(projectsData);
@@ -11,9 +12,11 @@ export default function Projects() {
     <section>
       <SectionHeading title={"My Projects"} />
       <div>
-        <React.Fragment>
-          <Project />
-        </React.Fragment>
+        {projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
+        ))}
       </div>
     </section>
   );
