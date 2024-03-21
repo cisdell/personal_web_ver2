@@ -11,7 +11,9 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Projects() {
   // console.log(projectsData);
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
   const { setActiveSection } = useActiveSectionContext();
 
   useEffect(() => {

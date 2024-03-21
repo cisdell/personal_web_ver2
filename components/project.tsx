@@ -14,7 +14,7 @@ export default function Project({
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
-    target: "",
+    target: ref,
     offset: ["0 1", "1.33 1"],
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
