@@ -35,16 +35,7 @@ export default function Contact() {
         </a>{" "}
         or by using this form.
       </p>
-      <form
-        className="mt-10 flex flex-col"
-        action={async (formData) => {
-          console.log(formData.getAll);
-          console.log(formData.get("senderEmail"));
-          console.log(formData.get("senderMessage"));
-
-          await sendEmail(formData);
-        }}
-      >
+      <form className="mt-10 flex flex-col" action={sendEmail}>
         <input
           className="h-14 px-4 rounded-lg borderBlack"
           type="email"
