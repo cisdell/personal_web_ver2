@@ -5,9 +5,10 @@ import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-
+import { sendEmail } from "./sendEmail";
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+
   return (
     <motion.section
       id="contact"
@@ -40,6 +41,8 @@ export default function Contact() {
           console.log(formData.getAll);
           console.log(formData.get("senderEmail"));
           console.log(formData.get("senderMessage"));
+
+          await sendEmail(formData);
         }}
       >
         <input
