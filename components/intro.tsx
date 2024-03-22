@@ -9,9 +9,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   // const { ref, inView } = useInView({
   //   threshold: 0.5,
   // });
@@ -81,13 +83,16 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
+          className="group bg-gray-900 text-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack"
+          onClick={() => {
+            setActiveSection("Contact");
+          }}
         >
           Contact me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-3 transition" />
         </Link>
         <a
-          className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer transition border border-black/10"
+          className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer transition borderBlack"
           href="/CV.pdf"
           download
         >
@@ -95,14 +100,14 @@ export default function Intro() {
           <HiDownload className="opacity-70 group-hover:translate-y-2 " />
         </a>
         <a
-          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] cursor-pointer transition border border-black/10"
+          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] cursor-pointer transition borderBlack"
           href="https://www.linkedin.com/in/andrewicho1/"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] active:scale-105 cursor-pointer transition border border-black/10"
+          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] active:scale-105 cursor-pointer transition borderBlack"
           href="https://www.github.com/cisdell/"
           target="_blank"
         >
