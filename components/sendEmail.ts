@@ -1,8 +1,7 @@
 'use server'
 import { Resend } from 'resend';
-import { validateString } from '@/lib/utils';
+import { validateString, getErrorMessage } from '@/lib/utils';
 const resend = new Resend(process.env.RESEND_API_KEY)
-
 
 
 export const sendEmail = async (formData: FormData) => {
@@ -24,16 +23,15 @@ export const sendEmail = async (formData: FormData) => {
   }
   try {
     await resend.emails.send({
-      from: ' FROM MESSAGE BOARD <onboarding@resend.dev>',
+      from: 'FROM MESSAGE BOARD <onboarding@resend.dev>',
       to: 'cisdell@gmail.com',
-      subject: 'test',
+      subject: 'Email from personal website',
       reply_to: senderEmail as string,
       text: message as string,
     })
   } catch (error: unknown) {
-    // return { err: err.message }
     return {
-      error: error.message,
+      error: getErrorMessage(error)
     }
   }
 };
