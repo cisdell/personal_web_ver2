@@ -28,7 +28,7 @@ export default function RootLayout({
           <Header />
           {children}
           {/* <Toaster position="top-right" /> */}
-          <Footer className="mb-1 text-center" />
+          <Footer />
         </ActiveSectionContextProvider>
       </body>
     </html>
