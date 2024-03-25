@@ -70,7 +70,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="mb-10 pb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl">
-          Hello! My name is Andrew and I`&apos;m a full stack developer! I enjoy
+          Hello! My name is Andrew and I&apos;m a full stack developer! I enjoy
           building things!
         </span>
       </motion.h1>
