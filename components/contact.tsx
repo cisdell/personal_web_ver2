@@ -31,8 +31,8 @@ export default function Contact() {
       <SectionHeading title={"Contact Me"} />
       <p className="text-gray-700 -mt-5 dark:text-white/80">
         Reach out to Andrew at{" "}
-        <a className="underline" href="mailto:cisdell@gmail.com">
-          cisdell@gmail.com
+        <a className="underline" href="mailto:cho.andrew.42@gmail.com">
+          cho.andrew.42@gmail.com
         </a>{" "}
         or by using this form.
       </p>
