@@ -92,7 +92,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-3 transition" />
         </Link>
         <a
-          className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer transition borderBlack"
+          className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 cursor-pointer transition borderBlack dark:bg-white/10"
           href="/CV.pdf"
           download
         >
@@ -100,14 +100,14 @@ export default function Intro() {
           <HiDownload className="opacity-70 group-hover:translate-y-2 " />
         </a>
         <a
-          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] cursor-pointer transition borderBlack"
+          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-[1.15] active:scale-[1.15] cursor-pointer transition borderBlack dark:bg-white/10 dark:text-white/70"
           href="https://www.linkedin.com/in/andrewicho1/"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] active:scale-105 cursor-pointer transition borderBlack"
+          className="bg-white px-4 py-3 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] active:scale-105 cursor-pointer transition borderBlack dark:bg-white/10 dark:text-white/70"
           href="https://www.github.com/cisdell/"
           target="_blank"
         >

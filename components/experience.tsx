@@ -2,6 +2,7 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
+// import theme
 import { experiencesData } from "@/lib/data";
 import {
   VerticalTimeline,
@@ -9,11 +10,18 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { useSectionInView } from "@/lib/hooks";
+import { useTheme } from "@/context/theme-context";
+
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
+  const { theme } = useTheme();
+
   // console.log(experiencesData);
   return (
-    <section id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
+    <section
+      id="experience"
+      className="scroll-mt-28 mb-28 sm:mb-40 dark:text-white/80"
+    >
       <SectionHeading title={"My experience"} />
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -21,7 +29,8 @@ export default function Experience() {
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
-                background: "#f3f4f6",
+                background:
+                  theme === "light" ? "#f3f4f6" : "rgba(225, 225, 225, .05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0,0,0, 0.05)",
                 textAlign: "left",

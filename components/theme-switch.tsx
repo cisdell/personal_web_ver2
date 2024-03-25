@@ -1,37 +1,36 @@
 "use client";
+import { useTheme } from "@/context/theme-context";
 import React, { useEffect, useState } from "react";
 import { BsMoon, BsSun } from "react-icons/bs";
-
-type Theme = "light" | "dark";
-
 export default function ThemeSwitch() {
-  const [theme, setTheme] = useState<Theme>("light");
+  const { theme, toggleTheme } = useTheme();
+  // const [theme, setTheme] = useState<Theme>("light");
 
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-      window.localStorage.setItem("theme", "dark");
-      document.documentElement.classList.add("dark");
-    } else {
-      setTheme("light");
-      window.localStorage.setItem("theme", "light");
-      document.documentElement.classList.remove("dark");
-    }
-    console.log(theme);
-  };
+  // const toggleTheme = () => {
+  //   if (theme === "light") {
+  //     setTheme("dark");
+  //     window.localStorage.setItem("theme", "dark");
+  //     document.documentElement.classList.add("dark");
+  //   } else {
+  //     setTheme("light");
+  //     window.localStorage.setItem("theme", "light");
+  //     document.documentElement.classList.remove("dark");
+  //   }
+  //   console.log(theme);
+  // };
 
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme") as Theme | null;
-    if (localTheme) {
-      setTheme(localTheme);
-      if (localTheme === "dark") {
-        document.documentElement.classList.remove("dark");
-      }
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-      document.documentElement.classList.remove("dark");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const localTheme = window.localStorage.getItem("theme") as Theme | null;
+  //   if (localTheme) {
+  //     setTheme(localTheme);
+  //     if (localTheme === "dark") {
+  //       document.documentElement.classList.remove("dark");
+  //     }
+  //   } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  //     setTheme("dark");
+  //     document.documentElement.classList.remove("dark");
+  //   }
+  // }, []);
 
   return (
     <button
