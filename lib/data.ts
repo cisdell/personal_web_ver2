@@ -6,9 +6,7 @@ import { SiPython } from "react-icons/si";
 import { MdWork } from "react-icons/md";
 
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "../public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import sampleProject from "@/public/sample_project.jpeg";
 //come back and add more types later
 
 type LinkType = {
@@ -80,25 +78,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "test",
+    title: "Type Better",
     description:
       "exp.",
     tags: [ "React", "Next.js", "MongoDB", "Tailwind", "Prisma" ],
-    imageUrl: corpcommentImg,
+    imageUrl: sampleProject,
   },
   {
-    title: "test",
+    title: "Youtube Audio Detatcher",
     description:
       "temp.",
     tags: [ "React", "TypeScript", "Next.js", "Tailwind", "Redux" ],
-    imageUrl: rmtdevImg,
+    imageUrl: sampleProject,
   },
   {
-    title: "Word Analytics",
+    title: "Personal Website ver.2",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: [ "React", "Next.js", "SQL", "Tailwind", "Framer" ],
-    imageUrl: wordanalyticsImg,
+    imageUrl: sampleProject,
   },
 ] as const;
 
