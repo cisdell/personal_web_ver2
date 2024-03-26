@@ -81,22 +81,41 @@ export const projectsData = [
     title: "Type Better",
     description:
       "exp.",
-    tags: [ "React", "Next.js", "MongoDB", "Tailwind", "Prisma" ],
+    tags: [ "Typescript", "React", "Next.js", "Firebase", "Python", "Flask", "Firebase", "Tailwind" ],
     imageUrl: sampleProject,
+    projectLink: 'https://github.com/cisdell/type_better',
   },
-  {
-    title: "Youtube Audio Detatcher",
-    description:
-      "temp.",
-    tags: [ "React", "TypeScript", "Next.js", "Tailwind", "Redux" ],
-    imageUrl: sampleProject,
-  },
+  // {
+  //   title: "Youtube Audio Detatcher",
+  //   description:
+  //     "temp.",
+  //   tags: [ "React", "TypeScript", "Next.js", "Tailwind", "Redux" ],
+  //   imageUrl: sampleProject,
+  //   projectLink: '',
+  // },
+  // {
+  //   title: "TypeBetter2",
+  //   description: Typing game for
+  //     "temp.",
+  //   tags: [ "React", "TypeScript", "Next.js", "Tailwind", "Redux" ],
+  //   imageUrl: sampleProject,
+  //   projectLink: '',
+  // },
   {
     title: "Personal Website ver.2",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: [ "React", "Next.js", "SQL", "Tailwind", "Framer" ],
+    tags: [ "React", "Next.js", "SQL", "Tailwind", "Framer Motion" ],
     imageUrl: sampleProject,
+    projectLink: 'https://github.com/cisdell/personal_web_ver2',
+  },
+  {
+    title: "Near Earth Object Query Engine",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: [ "Python", "SQL", ],
+    imageUrl: sampleProject,
+    projectLink: 'https://github.com/cisdell/project-neo',
   },
 ] as const;
 

@@ -3,6 +3,7 @@ import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import { FaGithubSquare } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -11,6 +12,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  projectLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -31,10 +33,16 @@ export default function Project({
     >
       <section className="bg-gray-100 max-w-[42rem] border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3  even:pl-8 hover:bg-gray-200 rounded-lg transition sm:group-even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl">{title}</h3>
+          <span className="flex items-start justify-between">
+            <h3 className="text-2xl">{title}</h3>
+            <a href={projectLink} className="">
+              <FaGithubSquare className="h-10 w-10" />
+            </a>
+          </span>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
+
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
