@@ -80,7 +80,7 @@ export const projectsData = [
   {
     title: "Type Better",
     description:
-      "exp.",
+      "A web based typing game that's designed to improve your typing agility.",
     tags: [ "Typescript", "React", "Next.js", "Firebase", "Python", "Flask", "Firebase", "Tailwind" ],
     imageUrl: sampleProject,
     projectLink: 'https://github.com/cisdell/type_better',
