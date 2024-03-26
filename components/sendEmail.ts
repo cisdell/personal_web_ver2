@@ -10,7 +10,7 @@ export const sendEmail = async (formData: FormData) => {
   // console.log('running on the client')
   const message = (formData.get("senderMessage"));
   const senderEmail = formData.get("senderEmail")
-  console.log(senderEmail)
+  // console.log(senderEmail)
   //simple server side validation.
 
   if (!validateString(senderEmail, 500)) {
