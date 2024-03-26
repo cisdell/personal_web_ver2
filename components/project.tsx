@@ -35,7 +35,7 @@ export default function Project({
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <span className="flex items-start justify-between">
             <h3 className="text-2xl">{title}</h3>
-            <a href={projectLink} className="h-[64px]">
+            <a href={projectLink} target="_blank" className="h-[64px]">
               <FaGithubSquare className="h-10 w-10 hover:h-12 hover:scale-[1.15] transition" />
             </a>
           </span>
