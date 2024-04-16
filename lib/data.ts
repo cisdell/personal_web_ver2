@@ -7,6 +7,8 @@ import { MdWork } from "react-icons/md";
 
 import { LuGraduationCap } from "react-icons/lu";
 import sampleProject from "@/public/sample_project.jpeg";
+import personal_web_pic from "@/public/personal_web.png";
+import type_better_pic from "@/public/type_better.png";
 //come back and add more types later
 
 type LinkType = {
@@ -82,7 +84,7 @@ export const projectsData = [
     description:
       "A web based typing game that's designed to improve your typing agility.",
     tags: [ "Typescript", "React", "Next.js", "Firebase", "Python", "Flask", "Firebase", "Tailwind" ],
-    imageUrl: sampleProject,
+    imageUrl: type_better_pic,
     projectLink: 'https://github.com/cisdell/type_better',
   },
   // {
@@ -106,7 +108,7 @@ export const projectsData = [
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: [ "React", "Next.js", "SQL", "Tailwind", "Framer Motion" ],
-    imageUrl: sampleProject,
+    imageUrl: personal_web_pic,
     projectLink: 'https://github.com/cisdell/personal_web_ver2',
   },
   {
