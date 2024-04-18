@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { FaGithubSquare } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
 
 type ProjectProps = (typeof projectsData)[number];
 

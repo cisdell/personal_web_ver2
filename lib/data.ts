@@ -48,7 +48,7 @@ export const experiencesData = [
     title: "Two Sigma LP",
     location: "New York, NY",
     description:
-      "I was a compliance officer. I was a compliance officer. I was a compliance officer. I was a compliance officer. I was a compliance officer. I was a compliance officer. I was a compliance officer. ",
+      "This is whre it all started. I was hired as a compliance officer and I learned so many things about the financial industry. I worked with some of the smartest people I've ever met and I still talk to many of them.",
     icon: React.createElement(MdWork),
     date: "2012-2014",
   },
@@ -56,7 +56,7 @@ export const experiencesData = [
     title: "Bloomberg LP",
     location: "New York, NY",
     description:
-      ". Trading Solutions Product Specialist. Trading Solutions Product SpecialistTrading Solutions Product SpecialistTrading Solutions Product SpecialistTrading Solutions Product Specialist",
+      "My next journey was at Bloomberg. I had to wear many hats here. I was setting up and supporting asset managers and hedge fund managers compliance rules and risk management systems. I ran some critical internal meetings, and I was chosen to put together the global training program for the compliance team. I was promoted a couple of times and I was able to work on some really cool projects.",
     icon: React.createElement(MdWork),
     date: "2015 - 2020",
   },
@@ -64,7 +64,7 @@ export const experiencesData = [
     title: "BNY Mellon",
     location: "Remote",
     description:
-      "Test Engineer. Test Engineer. Test Engineer. Test Engineer. Test Engineer. Test Engineer. Test Engineer. Test Engineer. Test Engineer",
+      "The journey continues! I was writing SQL queries and building tests for a cloud based data platform for investment managers. It was an early stage product and I was in a chaotic environment. Half of my colleagues were in Ukraine and when the global conflict started things looked even grimmer.",
     icon: React.createElement(PiFileSql),
     date: "2021-2022",
   },
@@ -72,7 +72,7 @@ export const experiencesData = [
     title: "Hack Reactor / Personal projects",
     location: "Fort Lee, NJ",
     description:
-      "Built full stack web applications",
+      "I wanted a career reset after I was laid off. I wanted to take some time for myself to re-invest in myself. I completed a full stack engineering bootcamp in which we built web applications using modern technologies. I spent 2022 and 2023 building personal projects and learning new technologies. I'm ready to get back to work!",
     icon: React.createElement(FaReact),
     date: "2022-2024",
   },
@@ -86,6 +86,7 @@ export const projectsData = [
     tags: [ "Typescript", "React", "Next.js", "Firebase", "Python", "Flask", "Firebase", "Tailwind" ],
     imageUrl: type_better_2,
     projectLink: 'https://github.com/cisdell/type_better',
+    webLink: 'https://typebetter.vercel.app/',
   },
   // {
   //   title: "Youtube Audio Detatcher",
