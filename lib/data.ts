@@ -48,7 +48,7 @@ export const experiencesData = [
     title: "Two Sigma LP",
     location: "New York, NY",
     description:
-      "This is whre it all started. I was hired as a compliance officer and I learned so many things about the financial industry. I worked with some of the smartest people I've ever met and I still talk to many of them.",
+      "This is where it all started. I was hired as a compliance officer and I learned so many things about the financial industry. I worked with some of the smartest people I've ever met and they became my life long friends.",
     icon: React.createElement(MdWork),
     date: "2012-2014",
   },
@@ -56,15 +56,15 @@ export const experiencesData = [
     title: "Bloomberg LP",
     location: "New York, NY",
     description:
-      "My next journey was at Bloomberg. I had to wear many hats here. I was setting up and supporting asset managers and hedge fund managers compliance rules and risk management systems. I ran many critical internal meetings, and I was chosen to put together the global training program for the compliance team. I was promoted a couple of times and I was able to work on some really cool projects.",
+      "My next journey was at Bloomberg. I wore many hats here. I was setting up and supporting asset managers and hedge fund managers compliance rules and risk management systems. I ran many critical internal meetings, and I was chosen to put together the global training program for the Risk and Compliance product specialists. I was promoted a couple of times and I was able to work on some really cool projects.",
     icon: React.createElement(MdWork),
     date: "2015 - 2020",
   },
   {
     title: "BNY Mellon",
-    location: "Remote",
+    location: "Remote/Jersey City, NJ",
     description:
-      "The journey continues! I was writing SQL queries and building tests for a cloud based data platform for investment managers. It was an early stage product and I was in a chaotic environment. Half of my colleagues were in Ukraine and when the global conflict started things looked even grimmer.",
+      "The journey continues! I was writing SQL queries and building tests for a cloud based data platform for investment managers. It was an early stage product and I was in a chaotic environment. Half of my colleagues were in Ukraine and when the global conflict started things we were hugely affected by it.",
     icon: React.createElement(PiFileSql),
     date: "2021-2022",
   },
@@ -83,7 +83,7 @@ export const projectsData = [
     title: "Type Better",
     description:
       "A web based typing game that's designed to improve your typing agility.",
-    tags: [ "Typescript", "React", "Next.js", "Firebase", "Python", "Flask", "Firebase", "Tailwind" ],
+    tags: [ "Typescript", "React", "Next.js", "Vercel Postgres", "Tailwind", "Python", "Flask", "Firebase", "AWS" ],
     imageUrl: type_better_2,
     projectLink: 'https://github.com/cisdell/type_better',
     webLink: 'https://typebetter.vercel.app/',
@@ -108,7 +108,7 @@ export const projectsData = [
     title: "Personal Website ver.2",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: [ "React", "Next.js", "SQL", "Tailwind", "Framer Motion" ],
+    tags: [ "React", "Next.js", "Tailwind", "Framer Motion" ],
     imageUrl: personal_web_pic,
     projectLink: 'https://github.com/cisdell/personal_web_ver2',
   },
