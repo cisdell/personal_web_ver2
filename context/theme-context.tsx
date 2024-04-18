@@ -30,18 +30,19 @@ export default function ThemeContextProvider({
     console.log(theme);
   };
 
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme") as Theme | null;
-    if (localTheme) {
-      setTheme(localTheme);
-      if (localTheme === "dark") {
-        document.documentElement.classList.remove("dark");
-      }
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-      document.documentElement.classList.remove("dark");
-    }
-  }, []);
+  // this use effect sets the light vs dark mode based on your system setting, but I'm going to disable it for now.
+  // useEffect(() => {
+  //   const localTheme = window.localStorage.getItem("theme") as Theme | null;
+  //   if (localTheme) {
+  //     setTheme(localTheme);
+  //     if (localTheme === "dark") {
+  //       document.documentElement.classList.remove("dark");
+  //     }
+  //   } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  //     setTheme("dark");
+  //     document.documentElement.classList.remove("dark");
+  //   }
+  // }, []);
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
