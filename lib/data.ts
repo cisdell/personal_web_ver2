@@ -86,7 +86,7 @@ export const projectsData = [
     tags: [ "Typescript", "React", "Next.js", "Vercel Postgres", "Tailwind", "Python", "Flask", "Firebase", "AWS" ],
     imageUrl: type_better_2,
     projectLink: 'https://github.com/cisdell/type_better',
-    webLink: 'https://typebetter.vercel.app/',
+    webLink: 'https://type-better-2.vercel.app/',
   },
   // {
   //   title: "Youtube Audio Detatcher",
