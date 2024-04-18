@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { FaGithubSquare } from "react-icons/fa";
-import { CgWebsite } from "react-icons/cg";
+import { MdOutlineWebAsset } from "react-icons/md";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -41,7 +41,7 @@ export default function Project({
               <FaGithubSquare className="h-10 w-10 hover:h-12 hover:scale-[1.15] transition" />
             </a>
             <a href={webLink} target="_blank" className="h-[64px]">
-              <CgWebsite className="h-10 w-10 hover:h-12 hover:scale-[1.15] transition" />
+              <MdOutlineWebAsset className="h-10 w-10 hover:h-12 hover:scale-[1.15] transition" />
             </a>
           </span>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
