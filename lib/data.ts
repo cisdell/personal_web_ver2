@@ -56,7 +56,7 @@ export const experiencesData = [
     title: "Bloomberg LP",
     location: "New York, NY",
     description:
-      "My next journey was at Bloomberg. I had to wear many hats here. I was setting up and supporting asset managers and hedge fund managers compliance rules and risk management systems. I ran some critical internal meetings, and I was chosen to put together the global training program for the compliance team. I was promoted a couple of times and I was able to work on some really cool projects.",
+      "My next journey was at Bloomberg. I had to wear many hats here. I was setting up and supporting asset managers and hedge fund managers compliance rules and risk management systems. I ran many critical internal meetings, and I was chosen to put together the global training program for the compliance team. I was promoted a couple of times and I was able to work on some really cool projects.",
     icon: React.createElement(MdWork),
     date: "2015 - 2020",
   },
