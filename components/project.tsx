@@ -14,6 +14,7 @@ export default function Project({
   tags,
   imageUrl,
   projectLink,
+  webLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -38,6 +39,9 @@ export default function Project({
             <h3 className="text-2xl">{title}</h3>
             <a href={projectLink} target="_blank" className="h-[64px]">
               <FaGithubSquare className="h-10 w-10 hover:h-12 hover:scale-[1.15] transition" />
+            </a>
+            <a href={webLink} target="_blank" className="h-[64px]">
+              <CgWebsite className="h-10 w-10 hover:h-12 hover:scale-[1.15] transition" />
             </a>
           </span>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">

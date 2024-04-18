@@ -80,7 +80,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Type Better",
+    title: "Type Better v1, v2",
     description:
       "A web based typing game that's designed to improve your typing agility.",
     tags: [ "Typescript", "React", "Next.js", "Vercel Postgres", "Tailwind", "Python", "Flask", "Firebase", "AWS" ],
@@ -111,6 +111,7 @@ export const projectsData = [
     tags: [ "React", "Next.js", "Tailwind", "Framer Motion" ],
     imageUrl: personal_web_pic,
     projectLink: 'https://github.com/cisdell/personal_web_ver2',
+    webLink: 'https://hireandrewcho.vercel.app/',
   },
   {
     title: "Near Earth Object Query Engine",
@@ -119,6 +120,7 @@ export const projectsData = [
     tags: [ "Python", "SQL", ],
     imageUrl: sampleProject,
     projectLink: 'https://github.com/cisdell/project-neo',
+    webLink: 'https://hireandrewcho.vercel.app/',
   },
 ] as const;
 
