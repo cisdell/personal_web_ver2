@@ -40,9 +40,9 @@ export default function Project({
             <a href={projectLink} target="_blank" className="h-[64px]">
               <FaGithubSquare className="h-10 w-10 hover:h-12 hover:scale-[1.15] transition" />
             </a>
-            <a href={webLink} target="_blank" className="h-[64px]">
+            {/* <a href={webLink} target="_blank" className="h-[64px]">
               <MdOutlineWebAsset className="h-10 w-10 hover:h-12 hover:scale-[1.15] transition" />
-            </a>
+            </a> */}
           </span>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
